@@ -23,8 +23,6 @@ body {
     position: fixed;
     right: 0; /* Not margin :( */
     top: 0;
-    
-
 }
 
 .logo {
@@ -35,7 +33,6 @@ body {
 
 .nav-list {
     display: flex;
-    justify-items: flex-end;
     list-style-type: none;
    /* border: 3px solid black; debugging*/
     margin-right: 50px;
@@ -82,8 +79,90 @@ body {
 .landing-section p {
     text-shadow: 5px 7px black;
 }
-}
+
 
 /* LANDING-SECTION END------------------------*/
 
+/*CONTACT START --------------------*/
+.contact-section {
+    background-color: #303841;
+    height: 80vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.contact-header {
+    margin-bottom: 60px;
+    font-size: 40px;
+    width: 100%;
+    color: whitesmoke;
+
+}
+
+/* UNDERLINE Transition ----- */
+.un {
+    display: inline-block;
+  }
+  
+  .un::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: white;
+    transition: 300ms;
+  }
+  
+  .un:hover::after {
+    width: 100%;
+  }
+/* Transition effect end ---------- */
+
+.contact-header p {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 35px;
+}
+
+.contact-links a:hover {
+    transition-duration: 0.4s;
+    transform: translate3d(1px, 8px, 5px); 
+}
+
+.contact-details {
+    color: seashell;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/*FOOTER START---------------*/
+
+.footer {
+    background-color: mediumseagreen;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 20px 16px;
+    text-align: center;
+    
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/*FOOTER END----------------------*/
 
