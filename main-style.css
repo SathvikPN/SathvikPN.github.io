@@ -18,6 +18,7 @@ html {
     scroll-behavior: smooth;
     box-sizing: border-box;
     font-size: 16px;
+
 /*rem unit is relative to the font-size of the <html> element, which is the document root. */
 }
 
@@ -259,4 +260,46 @@ Use the ::before selector to insert something before the content.*/
 }
 .footer a:hover {
     text-decoration: underline;
+}
+
+
+
+
+
+
+/* FOR MOBILE VERSION ------------------------------*/
+@media (max-width: 400px) { 
+    html {
+        scroll-behavior: smooth;
+        box-sizing: border-box;
+        font-size: 10px;
+    }
+
+    .landing-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .landing-section h1 {
+        font-size: 14vw;
+    }
+
+    .contact-header {
+        margin-bottom: 2vh;
+        font-size: 5vw;
+        width: 100%;
+        color: whitesmoke;
+    }
+
+    .contact-header p {
+        font-size: 5vw;
+        margin-top: 2vh;
+    }
+
+    .contact-links {
+        font-size: 5vw;
+        margin-top: 8vh;
+    }
+
+
 }
