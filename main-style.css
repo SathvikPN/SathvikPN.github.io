@@ -2,8 +2,8 @@
 https://i.stack.imgur.com/yedYz.png */
 
 :root {
-    --nav-bar: darkgrey;
-    --nav-list: white;
+    --nav-bar: green;
+    --nav-list: black;
     --landing-section: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
     --interest-section: linear-gradient(152deg, #3a3d40 0%, #181719 100%);
 }
@@ -33,7 +33,7 @@ body {
 
 /* NAVIGATION ------------------------*/
 .navigation {
-    background-color: var(--nav-bar);
+    background-color: mediumseagreen;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -56,7 +56,7 @@ body {
 .nav-list li {
     padding: 5px 5px;
     margin-left: 2vw;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1.4rem;
 }
 
