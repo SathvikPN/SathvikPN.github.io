@@ -278,10 +278,15 @@ Use the ::before selector to insert something before the content.*/
     .landing-section {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 
     .landing-section h1 {
         font-size: 14vw;
+    }
+
+    .interests-section {
+        padding-top: 20vh;
     }
 
     .contact-header {
