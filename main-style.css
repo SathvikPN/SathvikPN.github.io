@@ -1,0 +1,262 @@
+/* Justify properties explained.
+https://i.stack.imgur.com/yedYz.png */
+
+:root {
+    --nav-bar: darkgrey;
+    --nav-list: white;
+    --landing-section: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    --interest-section: linear-gradient(152deg, #3a3d40 0%, #181719 100%);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-size: 16px;
+/*rem unit is relative to the font-size of the <html> element, which is the document root. */
+}
+
+/* BASE STYLE --------------------*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: lightgrey;
+    line-height: 1.8em;
+}
+
+
+
+/* NAVIGATION ------------------------*/
+.navigation {
+    background-color: var(--nav-bar);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.logo {
+    height: 8vh;
+    width: 8vh;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    padding-right: 5%;
+}
+
+.nav-list li {
+    padding: 5px 5px;
+    margin-left: 2vw;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: var(--nav-list);
+}
+
+.nav-list a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* LANDING-SECTION -------------------*/
+.landing-section {
+    padding-top: 9vh; /*because 8vh height of nav-bar fixed to window*/
+    background-image: var(--landing-section);
+    color: mintcream;
+    text-align: center;
+    height: 95vh;
+  
+    display: flex;
+    flex-direction: column;
+/*direction column. so, align sets horizontally items h1,p. 
+justify sets vertically. */
+    align-items: center;
+    justify-content: space-around;
+/* refer https://i.stack.imgur.com/yedYz.png */
+}
+
+.landing-section h1 {
+    font-size: 8rem;
+    display: block;
+    padding-top: 10%;
+    text-shadow: 1rem 1rem 0.5rem black;
+}
+
+.landing-section p {
+    padding: 5%;
+    border: 3px solid white;
+    box-shadow: 0.8rem 0.8rem black;
+    font-size: 1.6rem;
+    width: 100%;
+    
+}
+
+.landing-section a {
+    color: white;
+}
+
+/* The ::after selector inserts something after the content of each selected element(s).
+Use the content property to specify the content to insert.
+Use the ::before selector to insert something before the content.*/
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.button:hover span {
+    padding-right: 25px;
+}
+  
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+/* INTERESTING ------------- */
+.interests-section {
+    background-image: var(--interest-section);
+    color: blanchedalmond;
+    height: 95vh;
+    width: auto;
+    padding: 5rem;
+    display: flex;
+    align-content: space-around;
+    justify-content: space-evenly;
+}
+
+.interests-section h2 {
+    margin-bottom: 1rem;
+}
+
+.interest {
+    height: 30%;
+}
+
+.not-interest {
+    height: 30%;
+}
+
+
+
+
+
+/*CONTACT START --------------------*/
+.contact-section {
+    background-color: #303841;
+    height: 80vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.contact-header {
+    margin-bottom: 60px;
+    font-size: 40px;
+    width: 100%;
+    color: whitesmoke;
+
+}
+
+/* UNDERLINE Transition ----- */
+.un {
+    display: inline-block;
+  }
+  
+  .un::after {
+    content: '';
+    width: 0px;
+    height: 0.2rem;
+    display: block;
+    background: white;
+    transition: 300ms;
+    margin-top: 20px;
+  }
+  
+  .un:hover::after {
+    width: 100%;
+  }
+/* Transition effect end ---------- */
+
+.contact-header p {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 35px;
+}
+
+.contact-links a:hover {
+    transition-duration: 0.4s;
+    transform: translate3d(1px, 8px, 5px); 
+}
+
+.contact-details {
+    color: seashell;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/*FOOTER START---------------*/
+
+.footer {
+    background-color: mediumseagreen;
+    padding: 1rem 1rem;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.footer p {
+    display: inline;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.info {
+    font-size: 0.8rem;
+    font-weight: 300;
+    display: inline;
+    position: absolute;
+    left: 2rem;
+    padding: 0 0.1rem;
+    border-bottom: 0.1rem solid black;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
