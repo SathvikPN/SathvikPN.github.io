@@ -208,7 +208,7 @@ Use the ::before selector to insert something before the content.*/
 
 .contact-header p {
     font-size: 30px;
-    margin-top: 20px;
+    margin-bottom: 35px;
 }
 
 .contact-links {
@@ -267,6 +267,12 @@ Use the ::before selector to insert something before the content.*/
 
 
 
+
+
+
+
+
+
 /* FOR MOBILE VERSION ------------------------------*/
 @media (max-width: 400px) { 
     html {
@@ -279,6 +285,11 @@ Use the ::before selector to insert something before the content.*/
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+    }
+
+    .logo {
+        height: 5vh;
+        width: 5vh;
     }
 
     .landing-section h1 {
@@ -298,7 +309,7 @@ Use the ::before selector to insert something before the content.*/
 
     .contact-header p {
         font-size: 5vw;
-        margin-top: 2vh;
+        margin-bottom: 2vh;
     }
 
     .contact-links {
@@ -306,5 +317,8 @@ Use the ::before selector to insert something before the content.*/
         margin-top: 8vh;
     }
 
+    .info {
+        left: 1vw;
+    }
 
 }
