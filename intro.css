@@ -98,8 +98,9 @@ footer h3 {
 }
 
 .copyright {
-    color: black;
+    color: white;
     font-size: 0.8rem;
+    font-weight: lighter;
     font-family: Tahoma;
     background-color: #3a3d40;
     letter-spacing: 0.6vw;
