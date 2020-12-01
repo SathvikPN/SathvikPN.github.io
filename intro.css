@@ -51,7 +51,7 @@ header {
 
 .intro {
     padding: 0.8rem 0.4rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin: 1.8vw;
 }
 
@@ -67,7 +67,7 @@ header {
 
 footer {
     background-color: #303841;
-    color: wheat;
+    color: white;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -95,4 +95,13 @@ footer h3 {
     padding: 0.4rem;
     border: 1vw solid white;
     border-radius: 50vw;
+}
+
+.copyright {
+    color: black;
+    font-size: 0.8rem;
+    font-family: Tahoma;
+    background-color: #3a3d40;
+    letter-spacing: 0.6vw;
+    text-align: center;
 }
