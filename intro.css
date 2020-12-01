@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-size: 4vw;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+
+header {
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0.4rem;
+    box-shadow: 0 1vh 1vh black ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.tagline {
+    font-size: 0.4rem;
+    color: lightslategray;
+}
+
+.landing {
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.4rem;
+    padding-bottom: 0.4rem;
+    background-color: #181719;
+
+}
+
+.landing img {
+    width: 80vw;
+}
+
+.intro {
+    padding: 0.8rem 0.4rem;
+    font-size: 0.8rem;
+    margin: 1.8vw;
+}
+
+.intro p:first-of-type {
+    padding-top: 1rem;
+}
+
+.intro p {
+    padding-top: 0.6rem;
+}
+
+
+
+footer {
+    background-color: #303841;
+    color: wheat;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 0.8rem;
+    font-size: 0.6rem;
+}
+
+footer h3 {
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    margin-bottom: 3vh;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1rem;
+}
+
+.contact-links > a {
+    color: white;
+    text-decoration: none;
+    padding: 0.4rem;
+    border: 1vw solid white;
+    border-radius: 50vw;
+}
