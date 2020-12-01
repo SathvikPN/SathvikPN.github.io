@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>Meet Sathvik</title>
-    <link rel="stylesheet" href="main-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="intro.css">
+    <title>SathvikPN</title>
     <!-- Icon library --- LinkedIN missing :( -->
     <link
         rel="stylesheet"
@@ -12,76 +12,34 @@
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
         crossorigin="anonymous"
     />
-
     <!-- This works for LinkedIN but not others-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
-
 <body>
+    <header>
+        <p>Sathvik PN</p>
+        <p class="tagline">Built with HTML and CSS</p>
+    </header>
 
-    <!-- NAVIGATION STARTS -->
-    <nav id="nav-bar" class="navigation">
-        
-        <img class="logo" src="wow.png" alt="Logo">
-        
-        <ul class="nav-list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#interests">interests</a></li>
-            <li><a href="#connect">connect</a></li>
-        </ul>
-    </nav>
-    <!-- NAVIGATION ENDS -->
+    <section class="landing">
+        <img src="sathvik-pn.png" alt="sathvikPN">
+        <div class="intro">
+            <h2>Meet Sathvik</h2>
+            <p>
+                Passionate about Web Development and Software Development. <br>
+                Knows a thing or two about creative writing.
+            </p>
 
-
-    <!-- LANDING PAGE STARTS -->
-    <section id="home" class="landing-section">
-        <h1> &#x1f44b;I'm Sathvik</h1>
-        <a href="https://saathonline.blogspot.com"
-        ><p class="button"><span>Weaving Stories on web</span></p>
-        </a>
-        
+            <p>The National Institute of Engineering, Mysore [2022] </p>
     </section>
-    <!-- LANDING PAGE ENDS-->
 
-    <!-- INTEREST SECTION START -->
-    <section id="interests" class="interests-section">
-        <div class="interest">
-            <h2>
-                <i class="fas fa-thumbs-up"></i>
-                interested!
-            </h2>
-
-            <li>Creativity</li>
-            <li>Blogging</li>
-            <li>Rain</li>
-            <li>Movies</li>
-            
-        </div>
-
-        <div class="not-interest">
-            <h2>
-                <i class="fas fa-thumbs-down"></i> Nah...
-            </h2>
-
-            <li>celebrity gossips</li>
-            <li>click-bait news</li>
-            <li>city noise</li>
-            <li>astrology</li>
-        </div>
-        
-    </section>
-    <!-- INTEREST SECTION END-->
-
-    <!--CONTACT START-->    
-    <section id="connect" class="contact-section">
-        <div class="contact-header">
+    <footer>
+        <div class="footer-tagline">
             <p>Something to say?</p>
-            <h2 class="un">Get connected.</h2>
-            
+            <h3>Get Connected.</h3>
         </div>
 
-        <div class="contact-links">
+        <section class="contact-links" id="contact">
             <a href="https://saathonline.blogspot.com" 
             target="_blank" 
             class="button contact-details">
@@ -97,19 +55,7 @@
             class="button contact-details"
             ><i class="fab fa-github"></i
             > GitHub</a>
-        </div>
-    </section>
-    <!--CONTACT END-->
-
-    <!--FOOTER START-->
-    <section class="footer">
-        <p class="info">HTML5 and CSS3</p>
-        <p>Builiding with &#x2764; by 
-            <a href="connect">Sathvik PN</a></p>
-    </section>
-    <!--FOOTER END-->
-
-
-    
+        </section>
+    </footer>
 </body>
 </html>
