@@ -106,3 +106,19 @@ footer h3 {
     letter-spacing: 0.6vw;
     text-align: center;
 }
+
+@media screen and (min-width: 400px) {
+    html {
+        font-size: 4vh;
+    }
+
+    img {
+        max-height: 60vh;
+        max-width: 60vh;
+        justify-content: left;
+    }
+
+    .contact-links > a {
+        border: 1vh solid white;
+    }
+}
